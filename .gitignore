@@ -1,0 +1,7 @@
+.project
+.settings
+.project/*
+.settings/*
+.vagrant
+.vagrant/*
+environments/development/modules/*

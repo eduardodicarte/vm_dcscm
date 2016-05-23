@@ -18,7 +18,9 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
 	  
 	  puppet.facter = {
 	      "ip" => "192.168.210.200",
-	      "hostname" => "dcscm.dicarte.com.br"
+	      "hostname" => "dcscm.dicarte.com.br",
+	      "httpserver" => "apache",
+	      "iptables_config_accept" => ["*::80","localhost::8080"]
       }
   end
 end

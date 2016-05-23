@@ -10,6 +10,10 @@ node default{
     ensure => present,
     target => '/etc/hosts',
     ip => $::ip,
-    /*host_aliases => $::hostname*/
+  }
+  
+  class{"dc_scm":
+    httpServer => $::httpserver,
+    configAccept => $::iptables_config_accept
   }
 }
