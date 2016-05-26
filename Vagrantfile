@@ -20,7 +20,7 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
 	      "ip" => "192.168.210.200",
 	      "hostname" => "dcscm.dicarte.com.br",
 	      "httpserver" => "apache",
-	      "iptables_config_accept" => "INPUT:80,INPUT:8080"
+	      "iptables_config_accept" => "1:INPUT:80,2:INPUT:8080"
       }
   end
 end
