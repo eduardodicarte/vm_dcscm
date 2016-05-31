@@ -15,6 +15,7 @@ node default{
   class{"dc_scm":
     httpServer => $::httpserver,
     configAccept => $::iptables_config_accept,
-    servidorSCM => $::servidorscm
+    servidorSCM => $::servidorscm,
+    repositoryPath => $::repository_path
   }
 }
