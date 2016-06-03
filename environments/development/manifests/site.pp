@@ -16,6 +16,9 @@ node default{
     httpServer => $::httpserver,
     configAccept => $::iptables_config_accept,
     servidorSCM => $::servidorscm,
-    repositoryPath => $::repository_path
+    repositoryPath => $::repository_path,
+    svnUser => $::svn_user,
+    svnPass => $::svn_pass,
+    svnRepoName => $::svn_repo_name
   }
 }
