@@ -1,8 +1,9 @@
 .project
 .settings
+*~
 .project/*
 .settings/*
 .vagrant
 .vagrant/*
-modules/
-environments/development/modules/*
+modules
+modules/*
