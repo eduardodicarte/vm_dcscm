@@ -21,11 +21,12 @@ Vagrant.configure(VAGRANT_FILE_VERSION) do |config|
 	      "hostname" => "dcscm.dicarte.com.br",
 	      "httpserver" => "apache",
 	      "iptables_config_accept" => "1:INPUT:80,2:INPUT:8080",
-	      "servidorscm" => "svn",
+	      #"""servidorscm" => "svn",
 	      "repository_path" => "svn",
 	      "svn_user" => "admin",
 	      "svn_pass" => "$apr1$hX2raDqx$9vfQm/eq/cv3YEUwSn38p1",
-	      "svn_repo_name" => "repo"
+	      "svn_repo_name" => "repo",
+	      "servidorscm" => "git"
       }
   end
 end
